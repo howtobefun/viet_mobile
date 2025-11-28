@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_light"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- GHI CHÚ -->
+        <TextView
+            android:text="Ghi chú"
+            android:textColor="@color/text_primary"
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/edtContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="180dp"
+            android:gravity="top"
+            android:textColor="@color/text_primary"
+            android:textColorHint="@color/text_secondary"
+            android:background="@android:color/transparent"
+            android:padding="10dp"
+            android:textSize="18sp"
+            android:inputType="textMultiLine|textCapSentences"
+            android:overScrollMode="always"/>
+
+        <!-- MÀU -->
+        <TextView
+            android:layout_marginTop="16dp"
+            android:text="Màu"
+            android:textColor="@color/text_primary"
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:id="@+id/layoutColors"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp">
+
+            <View
+                android:id="@+id/viewColorYellow"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_margin="6dp"
+                android:background="@color/note_yellow"/>
+
+            <View
+                android:id="@+id/viewColorOrange"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_margin="6dp"
+                android:background="@color/note_orange"/>
+
+            <View
+                android:id="@+id/viewColorRed"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_margin="6dp"
+                android:background="@color/note_red"/>
+
+            <View
+                android:id="@+id/viewColorGreen"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_margin="6dp"
+                android:background="@color/note_green"/>
+
+            <View
+                android:id="@+id/viewColorBlue"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_margin="6dp"
+                android:background="@color/note_blue"/>
+
+            <View
+                android:id="@+id/viewColorPurple"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_margin="6dp"
+                android:background="@color/note_purple"/>
+        </LinearLayout>
+
+        <!-- DANH MỤC -->
+        <TextView
+            android:text="Danh mục"
+            android:textColor="@color/text_primary"
+            android:textSize="16sp"
+            android:layout_marginTop="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <RadioGroup
+            android:id="@+id/radioCategory"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/rbWork"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Work"/>
+
+            <RadioButton
+                android:id="@+id/rbStudy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Study"/>
+
+            <RadioButton
+                android:id="@+id/rbPersonal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Personal"/>
+
+            <RadioButton
+                android:id="@+id/rbOther"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Other"/>
+        </RadioGroup>
+
+        <!-- REMINDER -->
+        <TextView
+            android:text="Nhắc nhở"
+            android:textColor="@color/text_primary"
+            android:layout_marginTop="16dp"
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/btnPickReminder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="CHỌN THỜI GIAN"/>
+
+        <TextView
+            android:id="@+id/txtReminderInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Không nhắc"
+            android:textColor="@color/text_secondary"/>
+
+        <!-- NÚT LƯU -->
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_marginTop="24dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="LƯU"
+            android:padding="12dp"/>
+    </LinearLayout>
+</ScrollView>

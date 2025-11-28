@@ -1,0 +1,23 @@
+<resources>
+    <!-- Nền & chữ -->
+    <color name="background_light">#FAFAFA</color>
+    <color name="toolbar_bg">#FFFFFF</color>
+    <color name="text_primary">#212121</color>
+    <color name="text_secondary">#757575</color>
+
+    <!-- Màu thẻ note (pastel) -->
+    <color name="note_yellow">#FFF9C4</color>
+    <color name="note_orange">#FFE0B2</color>
+    <color name="note_red">#FFCDD2</color>
+    <color name="note_green">#C8E6C9</color>
+    <color name="note_blue">#BBDEFB</color>
+    <color name="note_purple">#E1BEE7</color>
+
+    <!-- FAB / accent -->
+    <color name="fab_orange">#FF9800</color>
+    <color name="accent">#6200EE</color>
+
+    <!-- Dự phòng -->
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+</resources>
